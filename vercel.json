@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "config/puma.rb",
+      "use": "@vercel/ruby"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/.*",
+      "dest": "/config/puma.rb"
+    }
+  ]
+}
